@@ -1,0 +1,76 @@
+.news_ticker_wrap{
+	position: fixed;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    background: #00a351;;
+    z-index: 9999;
+    bottom: 0;
+}
+.news_ticker_wrap .container_hr_news{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.news_ticker_wrap .ticker_timer{
+    width: 19%;
+    float: left;
+    height: 100%;
+    background: #000;
+}
+.news_ticker_wrap .ticker_news{
+    width: 75%;
+    float: left;
+    height: 100%;
+    padding:5px;
+    
+}
+.news_ticker_wrap .news_post_title{
+padding: 0px 10px;
+border-right: 1px solid;
+}
+.news_ticker_wrap .ticker_news a{
+	color: inherit;
+}
+.news_ticker_wrap .ticker_news span{
+	font-size: 16px;
+}
+.news_ticker_wrap .ticker_timer .newsh1{
+	font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    font-family: sans-serif;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+.news_ticker_wrap .ticker_timer .newsh1{
+
+	font-size: 10px;
+}
+
+}
+@media only screen and (max-width: 920px) and (min-width: 601px){
+	.news_ticker_wrap .ticker_timer .newsh1{
+
+	font-size: 18px;
+}
+}
+
+.rtl .news_ticker_wrap .ticker_timer{
+    width: 20%;
+    float: right;
+    height: 100%;
+    background: #000;
+}
+.rtl .news_ticker_wrap .ticker_news{
+    width: 80%;
+    float: right;
+    height: 100%;
+    padding:5px;
+}
+.rtl marquee{
+	direction: ltr;
+}
